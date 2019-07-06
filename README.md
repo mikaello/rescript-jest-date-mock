@@ -59,4 +59,4 @@ Js.log(Js.Date.make() |> Js.Date.toUTCString);
 
 ## Alternatives
 
-There is some tips in the post [Mocking/stubbing the current Date in Jest tests](https://codewithhugo.com/mocking-the-current-date-in-jest-tests/) by Hugo Di Francesco.
+There is some tips in the post "[Mocking/stubbing the current Date in Jest tests](https://codewithhugo.com/mocking-the-current-date-in-jest-tests/)" by Hugo Di Francesco.
