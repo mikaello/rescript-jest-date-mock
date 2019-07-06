@@ -7,7 +7,7 @@ BuckleScript bindings for [jest-date-mock](https://github.com/hustcc/jest-date-m
 ## Getting started
 
 ```
-yarn add mikaello/bs-jest-date-mock
+yarn add bs-jest-date-mock
 ```
 
 Then add `bs-jest-date-mock` as a dependency to `bsconfig.json`:
