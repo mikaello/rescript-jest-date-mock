@@ -35,7 +35,20 @@ There is also other ways, check out the [setup sections]https://github.com/hustc
 ```reason
 open BsJestDateMock
 
+advanceTo(Js.Date.makeWithYMD(~year=2010.0, ~month=5.0, ~date=27.0, ()));
 
+Js.log(Js.Date.make() |> Js.Date.toUTCString);
+// => Sat, 26 Jun 2010 22:00:00 GMT
+
+advanceBy(3 * 60 * 1000); // advanceBy 3 minutes (given in milliseconds)
+
+Js.log(Js.Date.make() |> Js.Date.toUTCString);
+// => Sat, 26 Jun 2010 22:03:00 GMT
+
+clear(); // shut down mock system, Js.Date should now be as before
+
+Js.log(Js.Date.make() |> Js.Date.toUTCString);
+// => Sat, 06 Jul 2019 07:01:41 GMT
 ```
 
 ## Contribute
