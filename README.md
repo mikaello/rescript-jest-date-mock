@@ -28,7 +28,7 @@ And add `jest-date-mock` to Jest setup files in `package.json` (you will need to
 }
 ```
 
-There is also other ways, check out the [setup sections]https://github.com/hustcc/jest-date-mock#setup in jest-date-mock.
+There is also other ways, check out the [setup sections](https://github.com/hustcc/jest-date-mock#setup) in jest-date-mock.
 
 ## Example
 
