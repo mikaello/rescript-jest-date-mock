@@ -18,7 +18,7 @@ Then add `bs-jest-date-mock` as a dependency to `bsconfig.json`:
 ]
 ```
 
-And add `jest-mock-date` to Jest setup files in `package.json` (you will need to add the `"jest"`-part to `package.json` if you don't have it already):
+And add `jest-date-mock` to Jest setup files in `package.json` (you will need to add the `"jest"`-part to `package.json` if you don't have it already):
 
 ```diff
 "jest": {
