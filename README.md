@@ -1,5 +1,6 @@
 # bs-jest-date-mock
 
+[![NPM version](http://img.shields.io/npm/v/bs-jest-date-mock.svg)](https://www.npmjs.org/package/bs-jest-date-mock)
 [![Build Status](https://travis-ci.org/mikaello/bs-jest-date-mock.svg?branch=master)](https://travis-ci.org/mikaello/bs-jest-date-mock)
 
 BuckleScript bindings for [jest-date-mock](https://github.com/hustcc/jest-date-mock). Mock Js.Date.t when using Jest.
