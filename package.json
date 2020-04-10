@@ -24,7 +24,7 @@
     "bs-platform": "^5.0.6"
   },
   "dependencies": {
-    "jest-date-mock": "^1.0.7"
+    "jest-date-mock": "^1.0.8"
   },
   "jest": {
     "setupFiles": [
