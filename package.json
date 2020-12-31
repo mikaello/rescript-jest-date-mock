@@ -20,7 +20,7 @@
   "bugs": "https://github.com/mikaello/bs-jest-date-mock/issues",
   "license": "MIT",
   "devDependencies": {
-    "@glennsl/bs-jest": "^0.5.1",
+    "@glennsl/bs-jest": "^0.6.0",
     "bs-platform": "8.1.1"
   },
   "dependencies": {
