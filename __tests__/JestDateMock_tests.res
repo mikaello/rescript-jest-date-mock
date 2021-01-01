@@ -1,11 +1,11 @@
 open Jest;
 open Expect;
 
-open BsJestDateMock;
+open RescriptJestDateMock;
 
 beforeEach(() => clear());
 
-describe("bs-jest-date-mock", () => {
+describe("rescript-jest-date-mock", () => {
   test("Date.make() and advanceTo 0", () => {
     advanceTo(Js.Date.fromFloat(0.0));
     expect(Js.Date.make()) |> toEqual(Js.Date.fromFloat(0.0));

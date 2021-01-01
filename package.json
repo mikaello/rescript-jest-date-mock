@@ -1,6 +1,6 @@
 {
-  "name": "bs-jest-date-mock",
-  "version": "1.0.5",
+  "name": "rescript-jest-date-mock",
+  "version": "1.0.0",
   "scripts": {
     "build": "bsb -make-world",
     "start": "bsb -make-world -w",
@@ -9,15 +9,15 @@
     "test": "jest"
   },
   "keywords": [
-    "BuckleScript",
+    "ReScript",
     "Date",
     "Jest"
   ],
   "author": "mikaello",
   "description": "Mock Js.Date when run unit test cases with Jest. Make tests of Js.Date easier.",
-  "homepage": "https://github.com/mikaello/bs-jest-date-mock",
-  "repository": "https://github.com/mikaello/bs-jest-date-mock",
-  "bugs": "https://github.com/mikaello/bs-jest-date-mock/issues",
+  "homepage": "https://github.com/mikaello/rescript-jest-date-mock",
+  "repository": "https://github.com/mikaello/rescript-jest-date-mock",
+  "bugs": "https://github.com/mikaello/rescript-jest-date-mock/issues",
   "license": "MIT",
   "devDependencies": {
     "@glennsl/bs-jest": "^0.6.0",
