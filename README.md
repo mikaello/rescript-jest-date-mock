@@ -34,7 +34,7 @@ There is also other ways, check out the [setup sections](https://github.com/hust
 ## Example
 
 ```reason
-open BsJestDateMock
+open RescriptJestDateMock
 
 advanceTo(Js.Date.makeWithYMD(~year=2010.0, ~month=5.0, ~date=27.0, ()));
 
