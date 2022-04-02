@@ -2,10 +2,10 @@
   "name": "rescript-jest-date-mock",
   "version": "2.0.0",
   "scripts": {
-    "build": "bsb -make-world",
-    "start": "bsb -make-world -w",
-    "clean": "bsb -clean-world",
-    "pretest": "yarn run build",
+    "build": "rescript build",
+    "start": "rescript build -w",
+    "clean": "rescript clean",
+    "pretest": "npm run build",
     "test": "jest"
   },
   "keywords": [
@@ -20,8 +20,8 @@
   "bugs": "https://github.com/mikaello/rescript-jest-date-mock/issues",
   "license": "MIT",
   "devDependencies": {
-    "@glennsl/bs-jest": "^0.6.0",
-    "bs-platform": "^8.4.2"
+    "@glennsl/rescript-jest": "^0.9.0",
+    "rescript": "^9.1.4"
   },
   "dependencies": {
     "jest-date-mock": "^1.0.8"

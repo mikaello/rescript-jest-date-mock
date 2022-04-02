@@ -16,10 +16,9 @@
     "in-source": true
   },
   "suffix": ".bs.js",
-  "bs-dependencies": ["@glennsl/bs-jest"],
+  "bs-dev-dependencies": ["@glennsl/rescript-jest"],
   "warnings": {
     "error": "+101"
   },
-  "namespace": false,
-  "refmt": 3
+  "namespace": false
 }
