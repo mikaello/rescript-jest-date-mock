@@ -21,7 +21,7 @@
   "license": "MIT",
   "devDependencies": {
     "@glennsl/rescript-jest": "0.9.2",
-    "rescript": "9.1.4"
+    "rescript": "10.0.1"
   },
   "dependencies": {
     "jest-date-mock": "1.0.8"
