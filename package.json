@@ -24,7 +24,7 @@
     "rescript": "10.1.4"
   },
   "dependencies": {
-    "jest-date-mock": "1.0.8"
+    "jest-date-mock": "1.0.10"
   },
   "jest": {
     "setupFiles": [
