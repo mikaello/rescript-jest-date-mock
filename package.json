@@ -20,7 +20,7 @@
   "bugs": "https://github.com/mikaello/rescript-jest-date-mock/issues",
   "license": "MIT",
   "devDependencies": {
-    "@glennsl/rescript-jest": "0.10.0",
+    "@glennsl/rescript-jest": "0.13.1",
     "rescript": "10.1.4"
   },
   "dependencies": {
