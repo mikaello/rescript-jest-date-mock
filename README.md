@@ -1,17 +1,16 @@
 # rescript-jest-date-mock
 
 [![NPM version](http://img.shields.io/npm/v/rescript-jest-date-mock.svg)](https://www.npmjs.org/package/rescript-jest-date-mock)
-[![Build Status](https://travis-ci.com/mikaello/rescript-jest-date-mock.svg?branch=master)](https://travis-ci.com/mikaello/rescript-jest-date-mock)
 
 ReScript bindings for [jest-date-mock](https://github.com/hustcc/jest-date-mock). Use it to mock `Js.Date.t` when using Jest.
 
 ## Getting started
 
 ```
-yarn add rescript-jest-date-mock
+npm install rescript-jest-date-mock
 ```
 
-Then add `rescript-jest-date-mock` as a dependency to `bsconfig.json`:
+Then add `rescript-jest-date-mock` as a dependency to `rescript.json`:
 
 ```diff
 "bs-dependencies": [
