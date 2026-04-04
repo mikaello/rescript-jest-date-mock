@@ -2,7 +2,7 @@
 
 [![NPM version](http://img.shields.io/npm/v/rescript-jest-date-mock.svg)](https://www.npmjs.org/package/rescript-jest-date-mock)
 
-ReScript bindings for [jest-date-mock](https://github.com/hustcc/jest-date-mock). Use it to mock `Js.Date.t` when using Jest.
+ReScript bindings for [jest-date-mock](https://github.com/hustcc/jest-date-mock). Use it to mock `Date.t` when using Jest.
 
 ## Getting started
 
@@ -13,7 +13,7 @@ npm install rescript-jest-date-mock
 Then add `rescript-jest-date-mock` as a dependency to `rescript.json`:
 
 ```diff
-"bs-dependencies": [
+"dependencies": [
 +  "rescript-jest-date-mock"
 ]
 ```
@@ -32,22 +32,22 @@ There is also other ways, check out the [setup sections](https://github.com/hust
 
 ## Example
 
-```reason
+```rescript
 open RescriptJestDateMock
 
-advanceTo(Js.Date.makeWithYMD(~year=2010.0, ~month=5.0, ~date=27.0, ()));
+advanceTo(Date.makeWithYMDHMS(~year=2010, ~month=5, ~day=27, ~hours=0, ~minutes=0, ~seconds=0))
 
-Js.log(Js.Date.make() |> Js.Date.toUTCString);
+Console.log(Date.make()->Date.toUTCString)
 // => Sat, 26 Jun 2010 22:00:00 GMT
 
-advanceBy(3 * 60 * 1000); // advanceBy 3 minutes (given in milliseconds)
+advanceBy(3 * 60 * 1000) // advanceBy 3 minutes (given in milliseconds)
 
-Js.log(Js.Date.make() |> Js.Date.toUTCString);
+Console.log(Date.make()->Date.toUTCString)
 // => Sat, 26 Jun 2010 22:03:00 GMT
 
-clear(); // shut down mock system, Js.Date should now be as before
+clear() // shut down mock system, Date should now be as before
 
-Js.log(Js.Date.make() |> Js.Date.toUTCString);
+Console.log(Date.make()->Date.toUTCString)
 // => Sat, 06 Jul 2019 07:01:41 GMT
 ```
 
