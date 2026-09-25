@@ -1,6 +1,6 @@
 # rescript-jest-date-mock
 
-[![NPM version](http://img.shields.io/npm/v/rescript-jest-date-mock.svg)](https://www.npmjs.org/package/rescript-jest-date-mock)
+[![NPM version](https://img.shields.io/npm/v/rescript-jest-date-mock.svg)](https://www.npmjs.org/package/rescript-jest-date-mock)
 
 ReScript bindings for [jest-date-mock](https://github.com/hustcc/jest-date-mock). Use it to mock `Date.t` when using Jest.
 
@@ -28,35 +28,34 @@ And add `jest-date-mock` to Jest setup files in `package.json` (you will need to
 }
 ```
 
-There is also other ways, check out the [setup sections](https://github.com/hustcc/jest-date-mock#setup) in jest-date-mock.
+For other setup options, see the [jest-date-mock setup guide](https://github.com/hustcc/jest-date-mock#setup).
 
 ## Example
 
 ```rescript
 open RescriptJestDateMock
 
-advanceTo(Date.makeWithYMDHMS(~year=2010, ~month=5, ~day=27, ~hours=0, ~minutes=0, ~seconds=0))
+advanceTo(Date.fromTime(0.0))
 
 Console.log(Date.make()->Date.toUTCString)
-// => Sat, 26 Jun 2010 22:00:00 GMT
+// => Thu, 01 Jan 1970 00:00:00 GMT
 
 advanceBy(3 * 60 * 1000) // advanceBy 3 minutes (given in milliseconds)
 
 Console.log(Date.make()->Date.toUTCString)
-// => Sat, 26 Jun 2010 22:03:00 GMT
+// => Thu, 01 Jan 1970 00:03:00 GMT
 
 clear() // shut down mock system, Date should now be as before
 
-Console.log(Date.make()->Date.toUTCString)
-// => Sat, 06 Jul 2019 07:01:41 GMT
+// Date now uses the real clock again.
 ```
 
 ## Contribute
 
 - If you find bugs or want to improve this library, feel free to open an issue or PR.
-- If you are upgrading any dependencies, please use yarn so `yarn.lock` is updated.
+- If you upgrade dependencies, use npm and commit the updated `package-lock.json`.
 - Try to adhere to [Angular commit guidelines](https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guideline).
 
 ## Alternatives
 
-There is some tips in the post "[Mocking/stubbing the current Date in Jest tests](https://codewithhugo.com/mocking-the-current-date-in-jest-tests/)" by Hugo Di Francesco.
+For more ideas, see "[Mocking/stubbing the current Date in Jest tests](https://codewithhugo.com/mocking-the-current-date-in-jest-tests/)" by Hugo Di Francesco.
