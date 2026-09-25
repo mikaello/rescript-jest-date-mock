@@ -35,19 +35,32 @@ For other setup options, see the [jest-date-mock setup guide](https://github.com
 ```rescript
 open RescriptJestDateMock
 
+advanceTo(Date.makeWithYMDHMS(~year=2010, ~month=5, ~day=27, ~hours=0, ~minutes=0, ~seconds=0))
+
+Console.log(Date.make()->Date.toUTCString)
+// In Europe/Oslo: Sat, 26 Jun 2010 22:00:00 GMT
+
+advanceBy(3 * 60 * 1000) // advanceBy 3 minutes (given in milliseconds)
+
+Console.log(Date.make()->Date.toUTCString)
+// In Europe/Oslo: Sat, 26 Jun 2010 22:03:00 GMT
+
+clear() // shut down mock system, Date should now be as before
+
+// Date now uses the real clock again.
+```
+
+For the same UTC output in every timezone, use an absolute timestamp:
+
+```rescript
+open RescriptJestDateMock
+
 advanceTo(Date.fromTime(0.0))
 
 Console.log(Date.make()->Date.toUTCString)
 // => Thu, 01 Jan 1970 00:00:00 GMT
 
-advanceBy(3 * 60 * 1000) // advanceBy 3 minutes (given in milliseconds)
-
-Console.log(Date.make()->Date.toUTCString)
-// => Thu, 01 Jan 1970 00:03:00 GMT
-
-clear() // shut down mock system, Date should now be as before
-
-// Date now uses the real clock again.
+clear()
 ```
 
 ## Contribute
