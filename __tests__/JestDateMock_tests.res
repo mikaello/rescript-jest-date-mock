@@ -17,10 +17,10 @@ describe("rescript-jest-date-mock", () => {
     expect(Date.make())->toEqual(Date.fromTime(thousand))
   })
 
-  test("Date.now() and advanceTo 520", () => {
-    let thousand = 520.0
-    advanceTo(Date.fromTime(thousand))
-    expect(Date.now())->toEqual(Date.fromTime(thousand)->Date.getMilliseconds->Int.toFloat)
+  test("Date.now() and advanceTo 1520", () => {
+    let timestamp = 1520.0
+    advanceTo(Date.fromTime(timestamp))
+    expect(Date.now())->toEqual(timestamp)
   })
 
   test("advanceBy", () => {

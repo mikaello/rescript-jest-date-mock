@@ -27,6 +27,7 @@
     "jest-date-mock": "1.0.10"
   },
   "jest": {
+    "testPathIgnorePatterns": ["/lib/"],
     "setupFiles": [
       "jest-date-mock"
     ]
