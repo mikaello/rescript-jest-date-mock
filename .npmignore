@@ -1,2 +1,6 @@
 .travis.yml
 __tests__/
+.github/
+renovate.json
+lib/bs/__tests__/
+lib/ocaml/JestDateMock_tests.*
