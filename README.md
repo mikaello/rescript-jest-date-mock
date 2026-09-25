@@ -38,12 +38,12 @@ open RescriptJestDateMock
 advanceTo(Date.makeWithYMDHMS(~year=2010, ~month=5, ~day=27, ~hours=0, ~minutes=0, ~seconds=0))
 
 Console.log(Date.make()->Date.toUTCString)
-// In Europe/Oslo: Sat, 26 Jun 2010 22:00:00 GMT
+// In Europe/Stockholm: Sat, 26 Jun 2010 22:00:00 GMT
 
 advanceBy(3 * 60 * 1000) // advanceBy 3 minutes (given in milliseconds)
 
 Console.log(Date.make()->Date.toUTCString)
-// In Europe/Oslo: Sat, 26 Jun 2010 22:03:00 GMT
+// In Europe/Stockholm: Sat, 26 Jun 2010 22:03:00 GMT
 
 clear() // shut down mock system, Date should now be as before
 
